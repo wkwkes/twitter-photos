@@ -1,8 +1,8 @@
-import ConfigParser
+import configparser
 from .settings import SECTIONS, CONFIG
 
 
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.read(CONFIG)
 
 if not config.has_section(SECTIONS['INCREMENTS']):

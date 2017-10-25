@@ -1,4 +1,4 @@
-import ConfigParser
+import configparser
 import os
 import sys
 
@@ -17,7 +17,7 @@ SECTIONS = {
 # For local development
 sys.path.insert(1, os.path.join(PROJECT_PATH, 'python-twitter'))
 
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 
 if os.environ.get('TWPHOTOS_TEST_CONFIG'):
     CONFIG = TEST_CONFIG

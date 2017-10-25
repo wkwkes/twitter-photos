@@ -1,5 +1,5 @@
 import os
-import Queue
+import queue
 import threading
 import sys
 import urllib3
@@ -7,7 +7,7 @@ from .settings import PROGRESS_FORMATTER, NUM_THREADS
 
 
 pool_manager = urllib3.PoolManager()
-photo_queue = Queue.Queue()
+photo_queue = queue.Queue()
 lock = threading.Lock()
 downloaded = 0
 
